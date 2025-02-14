@@ -1,10 +1,18 @@
 import { create } from "zustand";
 import { devtools } from "zustand/middleware";
 import { immer } from "zustand/middleware/immer";
-import { authSlice } from "../app/auth/store";
+// import { authSlice, AuthState } from "../app/auth/store";
+import {  IMainStore, mainSlice } from "../app/main/store";
 
-const useStore = create()(
-  immer(devtools((...props) => authSlice(...props)))
+type StoreState =  IMainStore;
+
+const useStore = create<StoreState>()(
+  devtools(
+    immer((...props) => ({
+      // ...authSlice(...props),
+      ...mainSlice(...props),
+    }))
+  )
 );
 
 export { useStore };
