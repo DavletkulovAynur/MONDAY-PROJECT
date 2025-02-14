@@ -1,13 +1,9 @@
-import { State } from 'zustand';
+import { StateCreator } from "zustand";
 
-// Тип состояния
-interface AuthState {
-  user: string | null; // или любой другой тип, в зависимости от данных пользователя
-  logout: () => void;
+export interface AuthState {
+  user: string | null;
 }
 
-// Создаём срез для аутентификации
-export const authSlice = (set: State<AuthState>) => ({
-  user: null, // начальное состояние
-  logout: () => set({ user: null }), // сбросим пользователя на null
+export const authSlice: StateCreator<AuthState> = () => ({
+  user: null,
 });
