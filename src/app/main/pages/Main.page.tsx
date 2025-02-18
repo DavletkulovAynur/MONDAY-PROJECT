@@ -18,8 +18,8 @@ const Main = () => {
           "https://jsonplaceholder.typicode.com/todos"
         );
         const json = await response.json();
-        //TODO: фильтрацию элементов могу тут вызвать 
-        setData([json]);
+        //TODO: фильтрацию элементов могу тут вызвать
+        setData(json);
       } catch (error) {
         console.log("Ошибка при загрузке данных", error);
       } finally {
@@ -34,12 +34,13 @@ const Main = () => {
     return <p>Loading...</p>;
   }
 
+  console.log(data);
   return (
     <>
       {data?.length ? (
         data.map((item) => (
           <div key={item.id}>
-            <p>{item.title}</p>
+            <p>{item.title}d</p>
           </div>
         ))
       ) : (
