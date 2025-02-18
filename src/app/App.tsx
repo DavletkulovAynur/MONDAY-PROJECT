@@ -1,4 +1,4 @@
-import { Main } from "./main/pages/Main.page";
+import { Main } from "@app/main/pages/Main.page";
 
 function App() {
   return (

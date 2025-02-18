@@ -6,3 +6,6 @@ import tsconfigPaths from "vite-tsconfig-paths";
 export default defineConfig({
   plugins: [react(), tsconfigPaths()],
 });
+
+//alias - это псевдонимы для импортов, помогают упростить импорты
+//path - это стандартный модуль в Node.js
