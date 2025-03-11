@@ -8,10 +8,10 @@ type StoreState = IMainStore
 
 const useStore = create<StoreState>()(
     devtools(
-        immer((...props) => ({
-            // ...authSlice(...props),
-            ...mainSlice(...props),
-        })),
+                            immer((...props) => ({
+                                // ...authSlice(...props),
+                                ...mainSlice(...props),
+                            })),
     ),
 )
 
