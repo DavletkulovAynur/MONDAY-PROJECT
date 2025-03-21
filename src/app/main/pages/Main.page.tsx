@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import config from 'config'
-
 interface IData {
     id: number
     title: string
@@ -10,7 +8,6 @@ interface IData {
 const Main = () => {
     const [data, setData] = useState<IData[] | null>(null)
     const [loading, setLoading] = useState<boolean>(false)
-    console.log('config', config)
 
     useEffect(() => {
         const getPosts = async () => {
