@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-
 interface IData {
     id: number
     title: string
