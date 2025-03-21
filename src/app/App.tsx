@@ -1,12 +1,9 @@
-import { Main } from '@app/main/pages/Main.page'
-
 function App() {
-    return (
-        <>
-            <h1>HELLO</h1>
-            <Main />
-        </>
-    )
+  return (
+    <>
+      <h1>HELLO</h1>
+    </>
+  )
 }
 
 export default App
