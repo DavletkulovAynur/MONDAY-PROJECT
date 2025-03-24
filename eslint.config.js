@@ -7,13 +7,11 @@ import tseslint from 'typescript-eslint'
 export default tseslint.config(
   { ignores: ['dist'] },
   {
-    extends: [
-      // js.configs.recommended,
-      ...tseslint.configs.recommended,
-      //   'plugin:react/recommended',
-      //   'plugin:react-hooks/recommended',
-      //   'prettier',
-    ],
+    extends: tseslint.configs.recommended.concat([
+      'plugin:react/recommended',
+      'plugin:react-hooks/recommended',
+      'prettier',
+    ]),
     files: ['**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2020,
