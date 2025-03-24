@@ -16,6 +16,7 @@ const Main = () => {
         const response = await fetch('https://jsonplaceholder.typicode.com/todos')
         const json = await response.json()
         //TODO: фильтрацию элементов могу тут вызвать
+        //еуые
         setData(json)
       } catch (error) {
         console.log('Ошибка при загрузке данных', error)
