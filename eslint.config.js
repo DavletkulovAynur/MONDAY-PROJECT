@@ -8,10 +8,11 @@ export default tseslint.config(
   { ignores: ['dist'] },
   {
     extends: [
+      // js.configs.recommended,
       ...tseslint.configs.recommended,
-      'plugin:react/recommended',
-      'plugin:react-hooks/recommended',
-      'prettier',
+      //   'plugin:react/recommended',
+      //   'plugin:react-hooks/recommended',
+      //   'prettier',
     ],
     files: ['**/*.{ts,tsx}'],
     languageOptions: {

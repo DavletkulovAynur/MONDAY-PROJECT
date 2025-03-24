@@ -17,6 +17,7 @@ const Main = () => {
         const json = await response.json()
         //TODO: фильтрацию элементов могу тут вызвать
         //еуые
+        //еуые
         setData(json)
       } catch (error) {
         console.log('Ошибка при загрузке данных', error)
