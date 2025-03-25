@@ -10,16 +10,16 @@ const mainSlice: TMainStore = () => ({
   count: 0,
 })
 
-// const mainSlice2: TMainStore = () => ({
-//   count: 0,
-// })
+const mainSlice2: TMainStore = () => ({
+  count: 0,
+})
 
-// const mainSlice3: TMainStore = () => ({
-//   count: 0,
-// })
+const mainSlice3: TMainStore = () => ({
+  count: 0,
+})
 
-// const mainSlice4: TMainStore = () => ({
-//   count: 0,
-// })
+const mainSlice4: TMainStore = () => ({
+  count: 0,
+})
 
 export { mainSlice }
